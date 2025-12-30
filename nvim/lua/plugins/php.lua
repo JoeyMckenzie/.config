@@ -67,12 +67,11 @@ return {
   },
   {
     "mfussenegger/nvim-lint",
-    optional = true,
-    opts = {
-      linters_by_ft = {
-        php = { "phpstan" },
-      },
-    },
+    opts = function(_, opts)
+      require("linters")
+      opts.linters_by_ft = opts.linters_by_ft or {}
+      opts.linters_by_ft.php = { "phpstan", "strict_types" }
+    end,
   },
   {
     "nvim-neotest/neotest",
