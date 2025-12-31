@@ -107,6 +107,9 @@ eval "$(zoxide init zsh)"
 # Starship
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 
+# Broort
+source $XDG_CONFIG_HOME/broot/launcher/bash/br
+
 
 #####################
 ####  Languages  ####
@@ -173,3 +176,4 @@ alias cvim='clear && nvim .'
 alias lzd='lazydocker'
 alias ls='eza'
 alias cat='bat'
+
