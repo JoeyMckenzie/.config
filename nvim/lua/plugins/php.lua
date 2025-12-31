@@ -57,6 +57,7 @@ return {
     opts = {
       formatters_by_ft = {
         php = { "pint", "php_cs_fixer", "mago" },
+        blade = { "blade-formatter" },
       },
       formatters = {
         php_cs_fixer = {
