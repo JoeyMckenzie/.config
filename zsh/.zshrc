@@ -119,6 +119,11 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# Atuin
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+
 
 #####################
 ####  Languages  ####
