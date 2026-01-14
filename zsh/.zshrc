@@ -158,11 +158,6 @@ export PATH="/Users/Shared/Herd/services/mysql/8.4.2/bin:$PATH"
 # Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
 # Lua
 export PATH="$HOME/.luarocks/bin:$PATH"
 
@@ -190,5 +185,6 @@ alias cvim='clear && nvim .'
 alias lzd='lazydocker'
 alias ls='eza'
 alias cat='bat'
-alias nv='nvim .'
+alias nv='clear && nvim .'
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
