@@ -103,7 +103,7 @@ vim.api.nvim_create_autocmd("FileType", {
     -- Note: longer patterns like property-read and property-write must come before property to avoid partial matches
     vim.fn.matchadd(
       "PHPDocTag",
-      "@\\(property-read\\|property-write\\|var\\|param\\|return\\|throws\\|deprecated\\|see\\|link\\|example\\|since\\|version\\|author\\|todo\\|fixme\\|note\\|warning\\|psalm\\|template\\|implements\\|extends\\|readonly\\|internal\\|package\\|suppress\\|noinspection\\|use\\|property\\|method\\|mixin\\|requires\\|copyright\\)",
+      "@\\(property-read\\|property-write\\|phpstan-type\\|phpstan-import-type\\|var\\|param\\|return\\|throws\\|deprecated\\|see\\|link\\|example\\|since\\|version\\|author\\|todo\\|fixme\\|note\\|warning\\|psalm\\|template\\|implements\\|extends\\|readonly\\|internal\\|package\\|suppress\\|noinspection\\|use\\|property\\|method\\|mixin\\|requires\\|copyright\\)",
       30
     )
   end,

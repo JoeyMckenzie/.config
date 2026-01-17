@@ -94,10 +94,6 @@ export PATH="$HOME/.opencode/bin:$PATH"
 # LLVM
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
-# asdf
-. "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
-
 # Spin for Laravel
 export PATH="$HOME/.spin/bin:$PATH"
 

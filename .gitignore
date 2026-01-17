@@ -31,5 +31,7 @@ nushell/history.txt
 
 !zellij/
 !zellij/**
+!opencode/
+!opencode/**
 
 /.worktrees
