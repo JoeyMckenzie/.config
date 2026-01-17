@@ -29,4 +29,7 @@ nushell/history.txt
 !btop/
 !btop/**
 
+!zellij/
+!zellij/**
+
 /.worktrees

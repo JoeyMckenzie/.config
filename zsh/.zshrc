@@ -124,6 +124,14 @@ function y() {
 
 eval "$(atuin init zsh)"
 
+# Mise 
+
+eval "$($HOME/.local/bin/mise activate zsh)"
+
+# Zellij
+
+eval "$(zellij setup --generate-auto-start zsh)"
+
 
 #####################
 ####  Languages  ####
