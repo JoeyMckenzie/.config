@@ -88,7 +88,7 @@ return {
     opts = function(_, opts)
       require("linters")
       opts.linters_by_ft = opts.linters_by_ft or {}
-      opts.linters_by_ft.php = { "phpstan", "strict_types" }
+      opts.linters_by_ft.php = { "phpstan", "strict_types", "mago" }
     end,
   },
   {
