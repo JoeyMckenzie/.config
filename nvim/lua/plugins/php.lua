@@ -74,7 +74,7 @@ return {
     opts = {
       formatters_by_ft = {
         php = { "pint", "php_cs_fixer", "mago" },
-        blade = { "blade-formatter" },
+        blade = { "prettier", "blade-formatter" },
       },
       formatters = {
         php_cs_fixer = {
@@ -88,7 +88,8 @@ return {
     opts = function(_, opts)
       require("linters")
       opts.linters_by_ft = opts.linters_by_ft or {}
-      opts.linters_by_ft.php = { "phpstan", "strict_types", "mago_lint" }
+      opts.linters_by_ft.php = { "strict_types", "mago_lint", "mago_analyze" }
+      -- opts.linters_by_ft.php = { "phpstan", "strict_types", "mago_lint", "mago_analyze" }
     end,
   },
   {
